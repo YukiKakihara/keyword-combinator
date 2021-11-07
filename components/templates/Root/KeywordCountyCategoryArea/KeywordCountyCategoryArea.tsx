@@ -32,7 +32,7 @@ export const Component: React.VFC<Props> = ({
   );
 };
 
-export const KeywordListArea: React.VFC<Props> = (props) => {
+export const KeywordCountyCategoryArea: React.VFC<Props> = (props) => {
   return <Component {...props} />;
 };
 

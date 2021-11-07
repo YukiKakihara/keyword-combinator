@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import { useKeywordCounties } from './hooks/useKeywordCounties';
 import { useResult } from './hooks/useResult';
 import { Title } from './Title';
-import { KeywordListArea } from './KeywordListArea';
+import { KeywordCountyCategoryArea } from './KeywordCountyCategoryArea';
 
 type Props = {
   addKeywordCountyCategory: () => void;
@@ -30,7 +30,7 @@ export const Component: React.VFC<Props> = ({
   return (
     <Wrapper className={className}>
       <WrappedTitle />
-      <KeywordListArea
+      <KeywordCountyCategoryArea
         keywordCounties={keywordCounties}
         updateKeywordCounties={updateKeywordCounties}
       />
