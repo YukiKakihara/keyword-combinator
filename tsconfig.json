@@ -18,6 +18,7 @@
     "paths": {
       "components/*": ["components/*"],
       "templates/*": ["components/templates/*"],
+      "uiParts/*": ["components/uiParts/*"],
       "utils/*": ["utils/*"]
     }
   },

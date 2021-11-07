@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 import { useKeywordCounties } from './hooks/useKeywordCounties';
 import { useResult } from './hooks/useResult';
 import { Title } from './Title';
+import { KeywordListArea } from './KeywordListArea';
 
 type Props = {
   addKeywordCountyCategory: () => void;
@@ -26,17 +27,10 @@ export const Component: React.VFC<Props> = ({
   return (
     <Wrapper className={className}>
       <WrappedTitle />
-      {keywordCounties.map((keywordCounty, index) => (
-        <React.Fragment key={index}>
-          <div>カテゴリ{index + 1}</div>
-          <textarea
-            onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) =>
-              updateKeywordList(e.target.value, index)
-            }
-            value={keywordCounty}
-          />
-        </React.Fragment>
-      ))}
+      <KeywordListArea
+        keywordCounties={keywordCounties}
+        updateKeywordList={updateKeywordList}
+      />
       <div onClick={addKeywordCountyCategory}>+</div>
       <div>結果</div>
       <textarea readOnly value={result} />
