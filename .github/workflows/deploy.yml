@@ -23,7 +23,7 @@ jobs:
       - name: install
         run: yarn install --prefer-offline
       - name: build
-        run: env NEXT_PUBLIC_BASE_PATH=/keyword-combinator yarn build
+        run: env NEXT_PUBLIC_ASSET_PREFIX=/keyword-combinator yarn build
       - name: export
         run: yarn export
       - name: add nojekyll
