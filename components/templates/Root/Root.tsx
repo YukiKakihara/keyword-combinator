@@ -4,6 +4,7 @@ import { useKeywordCounties } from './hooks/useKeywordCounties';
 import { useResult } from './hooks/useResult';
 import { Title } from './Title';
 import { KeywordCountyCategoryArea } from './KeywordCountyCategoryArea';
+import { Result } from './Result';
 
 type Props = {
   addKeywordCountyCategory: () => void;
@@ -30,13 +31,12 @@ export const Component: React.VFC<Props> = ({
   return (
     <Wrapper className={className}>
       <WrappedTitle />
-      <KeywordCountyCategoryArea
+      <WrappedKeywordCountyCategoryArea
         addKeywordCountyCategory={addKeywordCountyCategory}
         keywordCounties={keywordCounties}
         updateKeywordCounties={updateKeywordCounties}
       />
-      <div>結果</div>
-      <textarea readOnly value={result} />
+      <WrappedResult value={result} />
     </Wrapper>
   );
 };
@@ -63,4 +63,13 @@ const Wrapper = styled.div({
 
 const WrappedTitle = styled(Title)({
   marginBottom: 60,
+});
+
+const WrappedKeywordCountyCategoryArea = styled(KeywordCountyCategoryArea)({
+  marginBottom: 30,
+});
+
+const WrappedResult = styled(Result)({
+  margin: '0 auto',
+  width: 300,
 });

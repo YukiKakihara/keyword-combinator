@@ -48,8 +48,6 @@ const Wrapper = styled.div({
 
 const WrappedKeywordCountyCategory = styled(KeywordCountyCategory)({
   marginRight: 30,
-  height: 400,
-  minWidth: 300,
 });
 
 const AddIcon = styled.div({

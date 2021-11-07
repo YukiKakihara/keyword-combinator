@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <title>複合キーワード生成</title>
         <meta
           name="description"
-          content="最大100語までの複合キーワードを生成します"
+          content="最大100カテゴリまでの複合キーワードを生成します"
         />
         <link rel="icon" href={imagePath('favicon.ico')} />
       </Head>

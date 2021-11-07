@@ -29,6 +29,6 @@ const Wrapper = styled.div({});
 const Title = styled.div({});
 
 const WrappedTextarea = styled(Textarea)({
-  height: '100%',
-  width: '100%',
+  height: 400,
+  minWidth: 300,
 });
