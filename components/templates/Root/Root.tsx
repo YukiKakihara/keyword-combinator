@@ -10,7 +10,10 @@ type Props = {
   className?: string;
   keywordCounties: string[];
   result: string;
-  updateKeywordList: (newkeywordCounty: string, listIndex: number) => void;
+  updateKeywordCounties: (
+    newkeywordCounty: string,
+    categoryIndex: number
+  ) => void;
 };
 
 type ContainerProps = {
@@ -22,14 +25,14 @@ export const Component: React.VFC<Props> = ({
   className,
   keywordCounties,
   result,
-  updateKeywordList,
+  updateKeywordCounties,
 }) => {
   return (
     <Wrapper className={className}>
       <WrappedTitle />
       <KeywordListArea
         keywordCounties={keywordCounties}
-        updateKeywordList={updateKeywordList}
+        updateKeywordCounties={updateKeywordCounties}
       />
       <div onClick={addKeywordCountyCategory}>+</div>
       <div>結果</div>
@@ -39,7 +42,7 @@ export const Component: React.VFC<Props> = ({
 };
 
 export const Root: React.VFC<ContainerProps> = ({ className }) => {
-  const { addKeywordCountyCategory, keywordCounties, updateKeywordList } =
+  const { addKeywordCountyCategory, keywordCounties, updateKeywordCounties } =
     useKeywordCounties();
   const result = useResult(keywordCounties);
 
@@ -49,7 +52,7 @@ export const Root: React.VFC<ContainerProps> = ({ className }) => {
       className={className}
       keywordCounties={keywordCounties}
       result={result}
-      updateKeywordList={updateKeywordList}
+      updateKeywordCounties={updateKeywordCounties}
     />
   );
 };

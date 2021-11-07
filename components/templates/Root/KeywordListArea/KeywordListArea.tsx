@@ -5,13 +5,16 @@ import { KeywordCategory } from '../KeywordCategory';
 type Props = {
   className?: string;
   keywordCounties: string[];
-  updateKeywordList: (newkeywordCounty: string, listIndex: number) => void;
+  updateKeywordCounties: (
+    newkeywordCounty: string,
+    categoryIndex: number
+  ) => void;
 };
 
 export const Component: React.VFC<Props> = ({
   className,
   keywordCounties,
-  updateKeywordList,
+  updateKeywordCounties,
 }) => {
   return (
     <Wrapper className={className}>
@@ -20,7 +23,7 @@ export const Component: React.VFC<Props> = ({
           key={index}
           categoryNum={index + 1}
           onChange={(e: React.ChangeEvent<HTMLTextAreaElement>) =>
-            updateKeywordList(e.target.value, index)
+            updateKeywordCounties(e.target.value, index)
           }
           value={keywordCounty}
         />

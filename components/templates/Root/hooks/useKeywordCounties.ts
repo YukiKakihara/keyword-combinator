@@ -3,7 +3,10 @@ import { useState } from 'react';
 export const useKeywordCounties = (): {
   addKeywordCountyCategory: () => void;
   keywordCounties: string[];
-  updateKeywordList: (newkeywordCounty: string, listIndex: number) => void;
+  updateKeywordCounties: (
+    newkeywordCounty: string,
+    categoryIndex: number
+  ) => void;
 } => {
   const defaultKeywordCounties = ['', '', ''];
 
@@ -21,16 +24,16 @@ export const useKeywordCounties = (): {
     setKeywordCounties((prevState) => [...prevState, '']);
   };
 
-  const updateKeywordList = (
+  const updateKeywordCounties = (
     newkeywordCounty: string,
-    listIndex: number
+    categoryIndex: number
   ): void => {
     setKeywordCounties((prevState) =>
       prevState.map((keywordCounty, index) =>
-        index === listIndex ? newkeywordCounty : keywordCounty
+        index === categoryIndex ? newkeywordCounty : keywordCounty
       )
     );
   };
 
-  return { addKeywordCountyCategory, keywordCounties, updateKeywordList };
+  return { addKeywordCountyCategory, keywordCounties, updateKeywordCounties };
 };
