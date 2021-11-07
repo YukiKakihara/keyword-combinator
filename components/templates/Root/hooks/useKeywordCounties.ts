@@ -5,13 +5,19 @@ export const useKeywordCounties = (): {
   keywordCounties: string[];
   updateKeywordList: (newkeywordCounty: string, listIndex: number) => void;
 } => {
-  const [keywordCounties, setKeywordCounties] = useState<string[]>([
-    '',
-    '',
-    '',
-  ]);
+  const defaultKeywordCounties = ['', '', ''];
+
+  const [keywordCounties, setKeywordCounties] = useState<string[]>(
+    defaultKeywordCounties
+  );
 
   const addKeywordCountyCategory = (): void => {
+    const maximumCategoryCount = 100;
+
+    if (keywordCounties.length >= maximumCategoryCount) {
+      return;
+    }
+
     setKeywordCounties((prevState) => [...prevState, '']);
   };
 
