@@ -2,6 +2,7 @@ import '../styles/globals.css';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import { imagePath } from 'utils/imagePath';
+import { Footer } from 'uiParts/Footer';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -15,6 +16,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <link rel="icon" href={imagePath('favicon.ico')} />
       </Head>
       <Component {...pageProps} />
+      <Footer />
     </>
   );
 }
