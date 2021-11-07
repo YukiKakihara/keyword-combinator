@@ -8,7 +8,7 @@ export const useKeywordCounties = (): {
     categoryIndex: number
   ) => void;
 } => {
-  const defaultKeywordCounties = ['', '', ''];
+  const defaultKeywordCounties = ['', '', '', '', ''];
 
   const [keywordCounties, setKeywordCounties] = useState<string[]>(
     defaultKeywordCounties
