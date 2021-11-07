@@ -31,10 +31,10 @@ export const Component: React.VFC<Props> = ({
     <Wrapper className={className}>
       <WrappedTitle />
       <KeywordCountyCategoryArea
+        addKeywordCountyCategory={addKeywordCountyCategory}
         keywordCounties={keywordCounties}
         updateKeywordCounties={updateKeywordCounties}
       />
-      <div onClick={addKeywordCountyCategory}>+</div>
       <div>結果</div>
       <textarea readOnly value={result} />
     </Wrapper>

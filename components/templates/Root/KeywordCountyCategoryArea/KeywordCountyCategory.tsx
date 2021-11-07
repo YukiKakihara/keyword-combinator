@@ -15,15 +15,20 @@ export const Component: React.VFC<Props> = ({
   return (
     <Wrapper className={className}>
       <Title>カテゴリ{categoryNum}</Title>
-      <Textarea {...textareaProps} />
+      <WrappedTextarea {...textareaProps} />
     </Wrapper>
   );
 };
 
-export const KeywordCategory: React.VFC<Props> = (props) => {
+export const KeywordCountyCategory: React.VFC<Props> = (props) => {
   return <Component {...props} />;
 };
 
 const Wrapper = styled.div({});
 
 const Title = styled.div({});
+
+const WrappedTextarea = styled(Textarea)({
+  height: '100%',
+  width: '100%',
+});
