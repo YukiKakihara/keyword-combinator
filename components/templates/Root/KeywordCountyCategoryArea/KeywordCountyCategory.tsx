@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import { mq } from 'utils/mediaQuery';
 import { Textarea } from 'components/uiParts/Textarea';
 
 type Props = {
@@ -28,7 +29,9 @@ const Wrapper = styled.div({});
 
 const Title = styled.div({});
 
-const WrappedTextarea = styled(Textarea)({
-  height: 400,
-  minWidth: 300,
-});
+const WrappedTextarea = styled(Textarea)(
+  mq({
+    height: [300, 400],
+    minWidth: [150, 300],
+  })
+);

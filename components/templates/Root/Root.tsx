@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import { mq } from 'utils/mediaQuery';
 import { useKeywordCounties } from './hooks/useKeywordCounties';
 import { useResult } from './hooks/useResult';
 import { Title } from './Title';
@@ -57,9 +58,11 @@ export const Root: React.VFC<ContainerProps> = ({ className }) => {
   );
 };
 
-const Wrapper = styled.div({
-  padding: '50px 100px',
-});
+const Wrapper = styled.div(
+  mq({
+    padding: ['50px 15px', '50px 100px'],
+  })
+);
 
 const WrappedTitle = styled(Title)({
   marginBottom: 60,
@@ -69,7 +72,9 @@ const WrappedKeywordCountyCategoryArea = styled(KeywordCountyCategoryArea)({
   marginBottom: 30,
 });
 
-const WrappedResult = styled(Result)({
-  margin: '0 auto',
-  width: 300,
-});
+const WrappedResult = styled(Result)(
+  mq({
+    margin: '0 auto',
+    width: [250, 300],
+  })
+);

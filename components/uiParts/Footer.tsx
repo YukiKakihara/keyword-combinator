@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import { mq } from 'utils/mediaQuery';
 
 type Props = {
   className?: string;
@@ -23,9 +24,11 @@ export const Footer: React.VFC<Props> = (props) => {
   return <Component {...props} />;
 };
 
-const Wrapper = styled.div({
-  padding: '30px 50px',
-});
+const Wrapper = styled.div(
+  mq({
+    padding: ['30px 15px', '30px 50px'],
+  })
+);
 
 const Link = styled.a({
   textDecoration: 'underline',

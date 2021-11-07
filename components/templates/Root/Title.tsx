@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import { mq } from 'utils/mediaQuery';
 
 type Props = {
   className?: string;
@@ -22,10 +23,14 @@ const Wrapper = styled.div({
   textAlign: 'center',
 });
 
-const Main = styled.div({
-  fontSize: 36,
-});
+const Main = styled.div(
+  mq({
+    fontSize: [24, 36],
+  })
+);
 
-const Sub = styled.div({
-  fontsize: 16,
-});
+const Sub = styled.div(
+  mq({
+    fontsize: [12, 16],
+  })
+);
