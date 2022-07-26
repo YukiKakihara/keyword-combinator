@@ -3,11 +3,11 @@ import styled from '@emotion/styled';
 
 type Props = React.TextareaHTMLAttributes<HTMLTextAreaElement>;
 
-export const Component: React.VFC<Props> = (props) => {
+export const Component: React.FC<Props> = (props) => {
   return <Wrapper {...props} />;
 };
 
-export const Textarea: React.VFC<Props> = (props) => {
+export const Textarea: React.FC<Props> = (props) => {
   return <Component {...props} />;
 };
 
