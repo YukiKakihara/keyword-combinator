@@ -22,7 +22,7 @@ type ContainerProps = {
   className?: string;
 };
 
-export const Component: React.VFC<Props> = ({
+export const Component: React.FC<Props> = ({
   addKeywordCountyCategory,
   className,
   keywordCounties,
@@ -42,7 +42,7 @@ export const Component: React.VFC<Props> = ({
   );
 };
 
-export const Root: React.VFC<ContainerProps> = ({ className }) => {
+export const Root: React.FC<ContainerProps> = ({ className }) => {
   const { addKeywordCountyCategory, keywordCounties, updateKeywordCounties } =
     useKeywordCounties();
   const result = useResult(keywordCounties);
