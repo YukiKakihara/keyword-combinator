@@ -1,9 +1,9 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { Textarea } from '../../components/uiParts/Textarea';
+import { Component as Textarea } from '../../../components/uiParts/Textarea';
 
 export default {
-  title: 'uiParts/Textarea',
+  title: 'components/uiParts/Textarea',
   component: Textarea,
 } as ComponentMeta<typeof Textarea>;
 
