@@ -1,9 +1,9 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { Component as Root } from '../../../components/templates/Root/Root';
+import { Component as Root } from '../../../../components/templates/Root/Root';
 
 export default {
-  title: 'components/template/Root',
+  title: 'components/template/Root/Root',
   component: Root,
 } as ComponentMeta<typeof Root>;
 

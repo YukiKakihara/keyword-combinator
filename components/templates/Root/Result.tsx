@@ -7,7 +7,7 @@ type Props = {
   value: string;
 };
 
-export const Component: React.VFC<Props> = ({ className, value }) => {
+export const Component: React.FC<Props> = ({ className, value }) => {
   return (
     <Wrapper className={className}>
       <Title>結果</Title>
@@ -16,7 +16,7 @@ export const Component: React.VFC<Props> = ({ className, value }) => {
   );
 };
 
-export const Result: React.VFC<Props> = (props) => {
+export const Result: React.FC<Props> = (props) => {
   return <Component {...props} />;
 };
 
