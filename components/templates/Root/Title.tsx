@@ -6,7 +6,7 @@ type Props = {
   className?: string;
 };
 
-export const Component: React.VFC<Props> = ({ className }) => {
+export const Component: React.FC<Props> = ({ className }) => {
   return (
     <Wrapper className={className}>
       <Main>複合キーワード生成</Main>
@@ -15,7 +15,7 @@ export const Component: React.VFC<Props> = ({ className }) => {
   );
 };
 
-export const Title: React.VFC<Props> = (props) => {
+export const Title: React.FC<Props> = (props) => {
   return <Component {...props} />;
 };
 
