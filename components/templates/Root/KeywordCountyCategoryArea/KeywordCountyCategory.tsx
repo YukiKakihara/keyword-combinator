@@ -8,7 +8,7 @@ type Props = {
   className?: string;
 } & React.TextareaHTMLAttributes<HTMLTextAreaElement>;
 
-export const Component: React.VFC<Props> = ({
+export const Component: React.FC<Props> = ({
   categoryNum,
   className,
   ...textareaProps
@@ -21,7 +21,7 @@ export const Component: React.VFC<Props> = ({
   );
 };
 
-export const KeywordCountyCategory: React.VFC<Props> = (props) => {
+export const KeywordCountyCategory: React.FC<Props> = (props) => {
   return <Component {...props} />;
 };
 
