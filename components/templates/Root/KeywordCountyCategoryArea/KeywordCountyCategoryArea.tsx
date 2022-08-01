@@ -12,7 +12,7 @@ type Props = {
   ) => void;
 };
 
-export const Component: React.VFC<Props> = ({
+export const Component: React.FC<Props> = ({
   addKeywordCountyCategory,
   className,
   keywordCounties,
@@ -35,7 +35,7 @@ export const Component: React.VFC<Props> = ({
   );
 };
 
-export const KeywordCountyCategoryArea: React.VFC<Props> = (props) => {
+export const KeywordCountyCategoryArea: React.FC<Props> = (props) => {
   return <Component {...props} />;
 };
 
