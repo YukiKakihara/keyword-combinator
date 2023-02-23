@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@emotion/react": "^11.10.6",
-    "@emotion/styled": "^11.10.5",
+    "@emotion/styled": "^11.10.6",
     "@types/facepaint": "^1.2.2",
     "facepaint": "^1.2.1",
     "next": "13.1.6",
