@@ -1768,21 +1768,21 @@
     regenerator-runtime "^0.13.7"
     ts-dedent "^2.0.0"
 
-"@storybook/addon-interactions@^7.0.3":
-  version "7.0.3"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-interactions/-/addon-interactions-7.0.3.tgz#8bcbbe2713de29eaf1840f4b1fafbfe0977c0645"
-  integrity sha512-rFb5wseyZw3cvRrS/rKdG1tKiOztM+L5BpUzWPT+MWqCc93IYrb43Sw82dEfUyrjnjfq8NFETgAwwztmJUtpFw==
+"@storybook/addon-interactions@^7.0.4":
+  version "7.0.4"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-interactions/-/addon-interactions-7.0.4.tgz#3599b7a1455f2a98ea898d002974b55a50ebbe43"
+  integrity sha512-8FyLi4cwmdUWipfPyJ1+EXK7dWqOeotz6Pcg00jp2W0Vx2eOX0LlE2ezJ0P0fCBJfM8CNd6ijvBWRwKE/MlCDw==
   dependencies:
-    "@storybook/client-logger" "7.0.3"
-    "@storybook/components" "7.0.3"
-    "@storybook/core-common" "7.0.3"
-    "@storybook/core-events" "7.0.3"
+    "@storybook/client-logger" "7.0.4"
+    "@storybook/components" "7.0.4"
+    "@storybook/core-common" "7.0.4"
+    "@storybook/core-events" "7.0.4"
     "@storybook/global" "^5.0.0"
-    "@storybook/instrumenter" "7.0.3"
-    "@storybook/manager-api" "7.0.3"
-    "@storybook/preview-api" "7.0.3"
-    "@storybook/theming" "7.0.3"
-    "@storybook/types" "7.0.3"
+    "@storybook/instrumenter" "7.0.4"
+    "@storybook/manager-api" "7.0.4"
+    "@storybook/preview-api" "7.0.4"
+    "@storybook/theming" "7.0.4"
+    "@storybook/types" "7.0.4"
     jest-mock "^27.0.6"
     polished "^4.2.2"
     ts-dedent "^2.2.0"
@@ -2130,6 +2130,20 @@
     use-resize-observer "^9.1.0"
     util-deprecate "^1.0.2"
 
+"@storybook/components@7.0.4":
+  version "7.0.4"
+  resolved "https://registry.yarnpkg.com/@storybook/components/-/components-7.0.4.tgz#e1f43eba78f321018a58b6e1004f1071f76f9d5e"
+  integrity sha512-yBw+1NkGlaHo6U7crIlz8g5LFqXugmnS1t4xsxEUQO6b5BdQuQPggwjlkEkHoLW3sg04Sacgb7CvfDWInieuug==
+  dependencies:
+    "@storybook/client-logger" "7.0.4"
+    "@storybook/csf" "^0.1.0"
+    "@storybook/global" "^5.0.0"
+    "@storybook/theming" "7.0.4"
+    "@storybook/types" "7.0.4"
+    memoizerific "^1.11.3"
+    use-resize-observer "^9.1.0"
+    util-deprecate "^1.0.2"
+
 "@storybook/core-client@6.5.16":
   version "6.5.16"
   resolved "https://registry.yarnpkg.com/@storybook/core-client/-/core-client-6.5.16.tgz#ed2328fd38c6111fe887f6a91b28d9dc2b17092a"
@@ -2245,6 +2259,31 @@
     resolve-from "^5.0.0"
     ts-dedent "^2.0.0"
 
+"@storybook/core-common@7.0.4":
+  version "7.0.4"
+  resolved "https://registry.yarnpkg.com/@storybook/core-common/-/core-common-7.0.4.tgz#08064e27d6496eb0a220ba7564c99f009bbda759"
+  integrity sha512-3+U8LmMXjHDb2dO7x7rCsYIWVYekr1MxQ+fiUH5fNqLAeE+Fs9VzUTRlNbzo875bQRKkgeLraIyIM/XhhUzVnQ==
+  dependencies:
+    "@storybook/node-logger" "7.0.4"
+    "@storybook/types" "7.0.4"
+    "@types/node" "^16.0.0"
+    "@types/pretty-hrtime" "^1.0.0"
+    chalk "^4.1.0"
+    esbuild "^0.17.0"
+    esbuild-register "^3.4.0"
+    file-system-cache "^2.0.0"
+    find-up "^5.0.0"
+    fs-extra "^11.1.0"
+    glob "^8.1.0"
+    glob-promise "^6.0.2"
+    handlebars "^4.7.7"
+    lazy-universal-dotenv "^4.0.0"
+    picomatch "^2.3.0"
+    pkg-dir "^5.0.0"
+    pretty-hrtime "^1.0.3"
+    resolve-from "^5.0.0"
+    ts-dedent "^2.0.0"
+
 "@storybook/core-events@6.5.16":
   version "6.5.16"
   resolved "https://registry.yarnpkg.com/@storybook/core-events/-/core-events-6.5.16.tgz#b1c265dac755007dae172d9d4b72656c9e5d7bb3"
@@ -2325,16 +2364,16 @@
   resolved "https://registry.yarnpkg.com/@storybook/global/-/global-5.0.0.tgz#b793d34b94f572c1d7d9e0f44fac4e0dbc9572ed"
   integrity sha512-FcOqPAXACP0I3oJ/ws6/rrPT9WGhu915Cg8D02a9YxLo0DE9zI+a9A5gRGvmQ09fiWPukqI8ZAEoQEdWUKMQdQ==
 
-"@storybook/instrumenter@7.0.3", "@storybook/instrumenter@^7.0.0-beta.0 || ^7.0.0-rc.0 || ^7.0.0":
-  version "7.0.3"
-  resolved "https://registry.yarnpkg.com/@storybook/instrumenter/-/instrumenter-7.0.3.tgz#9a370d995023f1de4bcb8a3d47c371f311ae74ac"
-  integrity sha512-31LYZNYy+nY0yqcaOrG9r3a8C1QpFWpcs53tmFd2kuUFqS2/30opnUm4dHHmKEy1U6jxI8Z1lsWpU9Hg2r7gDA==
+"@storybook/instrumenter@7.0.4", "@storybook/instrumenter@^7.0.0-beta.0 || ^7.0.0-rc.0 || ^7.0.0":
+  version "7.0.4"
+  resolved "https://registry.yarnpkg.com/@storybook/instrumenter/-/instrumenter-7.0.4.tgz#04dd3aec86e94d51ad07a40dfcc94782a449cdde"
+  integrity sha512-HU+hVvym/KYiFhvpPSk5ugI0WjYQw8h/AJn/EY+oAb9vQzF2+ioS+IG5cK8usRQRwNqKFvdcKq1PNdYBj1rmGg==
   dependencies:
-    "@storybook/channels" "7.0.3"
-    "@storybook/client-logger" "7.0.3"
-    "@storybook/core-events" "7.0.3"
+    "@storybook/channels" "7.0.4"
+    "@storybook/client-logger" "7.0.4"
+    "@storybook/core-events" "7.0.4"
     "@storybook/global" "^5.0.0"
-    "@storybook/preview-api" "7.0.3"
+    "@storybook/preview-api" "7.0.4"
 
 "@storybook/manager-api@7.0.3":
   version "7.0.3"
@@ -2448,6 +2487,16 @@
   version "7.0.3"
   resolved "https://registry.yarnpkg.com/@storybook/node-logger/-/node-logger-7.0.3.tgz#31fc36af61650183a69677fb63b39877582e3248"
   integrity sha512-EK9lb7rBpiO5ZJEHcU7Xe8VI48IVPYTjP24ToTWkFydr8bE0X1kwWynYylihyUsIIlk016RzoZDOy/RL/QXftQ==
+  dependencies:
+    "@types/npmlog" "^4.1.2"
+    chalk "^4.1.0"
+    npmlog "^5.0.1"
+    pretty-hrtime "^1.0.3"
+
+"@storybook/node-logger@7.0.4":
+  version "7.0.4"
+  resolved "https://registry.yarnpkg.com/@storybook/node-logger/-/node-logger-7.0.4.tgz#8c728b85ef37b4078692327b60c4e734de692979"
+  integrity sha512-kXDSzih/ipKGa2sB6rYxLUIE7ADs/v+s7ZITmb2vBSq5GQNbPVXg2z2dz3S+goGfcHglHXkBUuIVn/Mhl/Xw+A==
   dependencies:
     "@types/npmlog" "^4.1.2"
     chalk "^4.1.0"
