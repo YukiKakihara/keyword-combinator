@@ -30,7 +30,7 @@
     "@storybook/react": "^7.2.0",
     "@storybook/testing-library": "^0.2.0",
     "@types/node": "18.16.3",
-    "@types/react": "18.2.16",
+    "@types/react": "18.2.20",
     "babel-loader": "^9.1.2",
     "eslint": "8.45.0",
     "eslint-config-next": "13.4.8",
